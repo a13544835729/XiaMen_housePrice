@@ -1,0 +1,13 @@
+
+
+# 创建库语句
+create database lianjiaData charset=utf8;
+
+#创建表语句
+create table housePrice(ID int(11) auto_increment primary key, name char(128), address char(128), model char(128),
+area char(128),direct char(128),perfect char(128),floor char(128),year char(128),type char(128),total char(128),
+unit char(128),traffic char(128)
+) charset=utf8;
+
+#插入数据库语句
+insert into lianjia (name,address,model,area,direct,perfect,floor,year,type,total,unit) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
